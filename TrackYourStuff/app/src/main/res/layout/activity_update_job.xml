@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateJobActivity">
+
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="Edit Requirment Form"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/job_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:hint="Job Title"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:hint="Customer Name"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:hint="Customer Address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/estimated_phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:hint="Customer Phone Number"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/work_nature"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/estimated_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:hint="Estimated Time  (in hours)"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

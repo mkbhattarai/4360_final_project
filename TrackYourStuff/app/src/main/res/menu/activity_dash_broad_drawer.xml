@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_addJob"
+            android:icon="@drawable/ic_work"
+            android:title="Add Job" />
+
+        <item
+            android:id="@+id/nav_PostedJob"
+            android:icon="@drawable/ic_action_list"
+            android:title="Posted jobs page" />
+        <!--<item-->
+        <!--android:id="@+id/nav_praposalList"-->
+        <!--android:icon="@drawable/ic_menu_gallery"-->
+        <!--android:title="Proposals list" />-->
+        <!--<item-->
+        <!--android:id="@+id/nav_approvedJ"-->
+        <!--android:icon="@drawable/ic_menu_slideshow"-->
+        <!--android:title="Approved Jobs" />-->
+        <item
+            android:id="@+id/nav_completedJ"
+            android:icon="@drawable/ic_action_like"
+            android:title="Completed Jobs" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_book"
+            android:title="Report" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maheshbhattarai.sqlite_database_demo.fragment.ReportFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/sppinerstatus"
+            ></Spinner>
+      <Spinner
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:id="@+id/sppiner"
+          ></Spinner>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:id="@+id/btn_export"
+            android:text="Export"
+            />
+    </LinearLayout>
+
+</FrameLayout>

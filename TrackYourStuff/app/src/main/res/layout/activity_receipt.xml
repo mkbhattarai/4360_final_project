@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiptActivity">
+
+
+    <TextView
+        android:id="@+id/txt_reciept_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Receipt"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/vLine_first"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/txt_reciept_title"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:background="#000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vLine_first">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_first"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="Job Title :" />
+
+                <TextView
+                    android:id="@+id/txt_job_title1V"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_second"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_below="@+id/layout_first"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Customer Name  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_third"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_below="@+id/layout_second"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="Customer Address  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_customer_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/layout_third"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Customer phone No  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_customer_phonn"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_five"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="40dp"
+                android:layout_below="@+id/layout_fourth"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:text="Short Discription  :" />
+
+                <TextView
+                    android:id="@+id/txt_short_dis"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_six"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_below="@+id/layout_five"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:text="Job Category  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_cat"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_saven"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_below="@+id/layout_six"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Spent Time  :" />
+
+                <TextView
+                    android:id="@+id/txt_spent_time"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_eight"
+              android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/layout_saven"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:text="Hourly Charges  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_hourly_charges"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vLine_am1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_eight"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:background="#000" />
+
+            <LinearLayout
+                android:id="@+id/layout_subTotal"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_height="40dp"
+                android:layout_below="@+id/vLine_am1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:text="Sub Total  :" />
+
+                <TextView
+                    android:id="@+id/txt_subTotal"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_nine"
+                android:layout_width="match_parent"
+              android:weightSum="2"
+                android:layout_height="40dp"
+                android:layout_below="@+id/layout_subTotal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:text="Extra Charges  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_extra_charges"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_ten"
+                android:layout_width="match_parent"
+               android:weightSum="2"
+                android:layout_height="40dp"
+                android:layout_below="@+id/layout_nine"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+
+                    android:padding="10dp"
+                    android:text="Distance Charges  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_distane_charges"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/vLine_first_second"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_ten"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="20dp"
+                android:background="#000" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_11"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_below="@+id/vLine_first_second"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:text="Total Ammount  :" />
+
+                <TextView
+                    android:id="@+id/txt_job_total_ammount"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/vLine_first"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_11"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/Vline_third"
+                android:layout_marginRight="20dp"
+                android:background="#000" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_send"
+
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:text="Mail to customer"
+                android:layout_below="@+id/Vline_third"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
